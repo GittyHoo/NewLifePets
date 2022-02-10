@@ -1,0 +1,23 @@
+{
+  "name": "newlifepets",
+  "version": "1.0.0",
+  "description": "This will be a map filled with all the necessary documents for the NewLifePets matching app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GittyHoo/NewLifePets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GittyHoo/NewLifePets/issues"
+  },
+  "homepage": "https://github.com/GittyHoo/NewLifePets#readme",
+  "dependencies": {
+    "camelcase": "^6.3.0"
+  }
+}
