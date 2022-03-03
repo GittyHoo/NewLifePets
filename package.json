@@ -4,7 +4,7 @@
   "description": "This will be a map filled with all the necessary documents for the NewLifePets matching app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/GittyHoo/NewLifePets#readme",
   "dependencies": {
-    "camelcase": "^6.3.0"
+    "body-parser": "^1.19.2",
+    "camelcase": "^6.3.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2"
   }
 }
