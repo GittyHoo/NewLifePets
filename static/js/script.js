@@ -1,4 +1,4 @@
-console.log('Hello')
+// console.log('Hello')
 
 // const slider = document.querySelector('.slide-container'),
 //     slides = Array.from(document.querySelectorAll('.slide'))
@@ -7,7 +7,7 @@ console.log('Hello')
 //     startPos = 0,
 //     currentTranslate = 0,
 //     prevTranslate = 0,
-//     animationID = 0
+//     animationID = 0,
 //     currentIndex = 0
 
 //     slides.forEach((slide, index) => {
@@ -37,8 +37,10 @@ console.log('Hello')
 //     function touchStart(index) {
 //         return function(event) {
 //             currentIndex = index
-//             console.log(event.type.includes('mouse'))
+//             startPos = getPositionX(event)
 //             isDragging = true
+
+//             animationID = requestAnimationFrame(animation)
 //         }
 //     }
 
@@ -46,8 +48,23 @@ console.log('Hello')
 //         isDragging = false
 //     }
 
-//     function touchMove() {
-//         if(isDragging) {
-//             console.log('move')
+//     function touchMove(event) {
+//         if (isDragging) {
+//         const currentPosition = getPositionX(event)
+//         currentTranslate = prevTranslate + currentPosition - 
+//         startPos  
 //         }
 //     }
+
+//     function getPositionX(event) {
+//         return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
+//     }
+
+// function animation() {
+//     setSliderPosition()
+//     if(isDragging) requestAnimationFrame(animation)
+// }
+
+// function setSliderPosition() {
+//    slider.style.tranform = `translateX(${currentTranslate}px)`
+// }

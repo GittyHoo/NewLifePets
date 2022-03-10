@@ -1,24 +1,19 @@
-<h1>Hello from the home template</h1>
-<section class="slide-container">
-    <div class="slide">
-        <h2>Henky</h2>
-        <h4>5 years old</h4>
-        <img src="images/cat.jpg" alt="cat">
-        <a href="#" class="green btn">Interested</a>
-        <a href="#" class="red btn">Interested</a>
-    </div>
-    <div class="slide">
-        <h2>Harry</h2>
-        <h4>3,5 years old</h4>
-        <img src="images/dog.jpg" alt="cat">
-        <a href="#" class="green btn">Interested</a>
-        <a href="#" class="red btn">Interested</a>
-    </div>
-    <div class="slide">
-        <h2>Hagrid</h2>
-        <h4>7,5 years old</h4>
-        <img src="images/cat_2.jpg" alt="cat">
-        <a href="#" class="green btn">Interested</a>
-        <a href="#" class="red btn">Interested</a>
-    </div>
-</section>
+    <section>
+        <div class="slide">
+            <h2>Henky</h2>
+            <h4>Calico</h4>
+            <p>Grandpa cat</p>
+            <img src="images/cat.jpg" alt="cat">
+        </div>
+
+        <form action="/like" method="POST">
+            <input type="hidden" name="userId" value="animal"><br>
+            <input type="hidden" name="voorkeur" value="like"><br>
+            <input type="image" id="image" src="../static/images/heart.png" alt="like button">
+        </form>
+        <form action="/dislike" method="POST">
+            <input type="hidden" name="userId" value="animal"><br>
+            <input type="hidden" name="voorkeur" value="dislike"><br>
+            <input type="image" id="image" src="../static/images/dislike.png" alt="dislike button">
+        </form>
+    </section>
