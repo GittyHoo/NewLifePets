@@ -1,3 +1,5 @@
+// This js.code is for BACKEND // 
+
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
@@ -8,9 +10,19 @@ app.engine('handlebars', engine())
 app.set('view engine', 'handlebars')
 app.set('views', './views')
 // bodyparser allows us to read data being sent from the browser to our server
-app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.urlencoded());
 // parse application JSON
 app.use(bodyParser.json())
+
+// This code works with the like and dislike buttons
+app.post('/like',(req,res)=> {
+  res.send('Je hebt ' + req.body.userID + ' een ' + req.body.voorkeur + ' gegeven.');
+});
+
+  app.post('/dislike',(req,res)=> {
+      res.send('Je hebt ' + req.body.userID + ' een ' + req.body.voorkeur + ' gegeven.');
+});
+
 // set the static folder
 app.use(express.static('static'))
 

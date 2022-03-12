@@ -1,19 +1,22 @@
-    <section>
-        <div class="slide">
-            <h2>Henky</h2>
-            <h4>Calico</h4>
-            <p>Grandpa cat</p>
-            <img src="images/cat.jpg" alt="cat">
-        </div>
+<section class="animals">
+    <div class="slide">
+        <h2>Henky</h2>
+        <h4>Calico</h4>
+        <p>Grandpa cat</p>
+        <img src="images/cat.jpg" alt="cat">
+    </div>
+</section>
 
-        <form action="/like" method="POST">
-            <input type="hidden" name="userId" value="animal"><br>
-            <input type="hidden" name="voorkeur" value="like"><br>
-            <input type="image" id="image" src="../static/images/heart.png" alt="like button">
-        </form>
-        <form action="/dislike" method="POST">
-            <input type="hidden" name="userId" value="animal"><br>
-            <input type="hidden" name="voorkeur" value="dislike"><br>
-            <input type="image" id="image" src="../static/images/dislike.png" alt="dislike button">
-        </form>
-    </section>
+<section class="buttons">
+    <form action="/dislike" method="POST">
+        <input type="hidden" name="userID" value="henky">
+        <input type="hidden" name="voorkeur" value="dislike">
+        <input type="image" class="dislike-bttn" src="images/dislike.png" alt="dislike button">
+    </form>
+
+    <form action="/like" method="POST">
+        <input type="hidden" name="userID" value="henky">
+        <input type="hidden" name="voorkeur" value="like">
+        <input type="image" class="like-bttn" src="images/heart.png" alt="like button">
+    </form>
+</section>

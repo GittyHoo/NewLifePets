@@ -68,3 +68,5 @@
 // function setSliderPosition() {
 //    slider.style.tranform = `translateX(${currentTranslate}px)`
 // }
+
+// ALLEEN FRONTEND SHIT IN PLEUREN, MAFKLAP //
